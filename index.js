@@ -10,17 +10,6 @@ bot.on("ready", function() {
 
 const ban = require('./ban');
 
-if(message.content.startsWith(prefix + "clear")) {
-    if(!message.guild.member(message.author).hasPermision("MANAGE_MESSAGE")) return message.channel.send("Vous n'avez pas la permission !");
-    
-    let args = message.content.split(" ").slice(1);
-    
-    if(!args[0]) return message.channel.send("Tu doit préciser un nombre de messages a supprimer !")
-    message.chanel.bulkDelete(args[0]).then(() => {
-        message.channel.send('${args[0]} message ont été supprimés !');
-    })
-}
-
 bot.on('message', function(message){
     if (ban.match(message)){
         return ban.action(message)
@@ -42,6 +31,18 @@ bot.on('message', message => {
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide")
     }
+    
+    if(message.content.startsWith(prefix + "clear")) {
+    if(!message.guild.member(message.author).hasPermision("MANAGE_MESSAGE")) return message.channel.send("Vous n'avez pas la permission !");
+    
+    let args = message.content.split(" ").slice(1);
+    
+    if(!args[0]) return message.channel.send("Tu doit préciser un nombre de messages a supprimer !")
+    message.chanel.bulkDelete(args[0]).then(() => {
+        message.channel.send('${args[0]} message ont été supprimés !');
+    })
+}
+
 
     if(message.content === prefix + "admin"){
         var help_embed = new Discord.RichEmbed()
