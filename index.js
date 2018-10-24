@@ -45,4 +45,4 @@ bot.on('message', message => {
     }
 });
     
-bot.login(Aflt.token);
+bot.login(process.env.TOKEN);
