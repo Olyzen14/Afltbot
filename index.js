@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const Aflt = require('./index.json');
 const prefix = ("*");
 
 bot.on("ready", function() {
