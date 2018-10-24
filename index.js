@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const prefix = ("*");
+const prefix = ("a*");
 
 bot.on("ready", function() {
     console.log("Je suis activé")
