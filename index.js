@@ -20,11 +20,6 @@ bot.on('message', message => {
     if(message.content === "secret"){
         message.reply("tu a trouvé un secret");
     }
-    
-bot.on('message', message => {
-    if(message.content === "pain"){
-        message.reply("tu a trouvé le 2eme secret");
-    }
         
     if(message.content === prefix + "aide"){
         var help_embed = new Discord.RichEmbed()
