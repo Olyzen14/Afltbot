@@ -4,7 +4,7 @@ const prefix = ("a*");
 
 bot.on("ready", function() {
     console.log("Je suis activé")
-    bot.user.setActivity('faite *aide by boruto')
+    bot.user.setActivity('faite a*aide by boruto')
     .catch(console.error)
 });
 
@@ -19,6 +19,11 @@ bot.on('message', function(message){
 bot.on('message', message => {
     if(message.content === "secret"){
         message.reply("tu a trouvé un secret");
+    }
+    
+bot.on('message', message => {
+    if(message.content === "pain"){
+        message.reply("tu a trouvé le 2eme secret");
     }
         
     if(message.content === prefix + "aide"){
