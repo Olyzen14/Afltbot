@@ -6,7 +6,7 @@ bot.on("ready", function() {
     console.log("Je suis activé")
     bot.user.setActivity('faite a*aide by boruto')
     .catch(console.error)
-})
+});
 
 const ban = require('./ban');
 
@@ -14,7 +14,7 @@ bot.on('message', function(message){
     if (ban.match(message)){
         return ban.action(message)
     }
-});
+})
 
 bot.on('message', message => {
     if(message.content === "secret"){
