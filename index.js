@@ -61,7 +61,6 @@ bot.on('message', message => {
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide")
     }
-
     
 });
     
