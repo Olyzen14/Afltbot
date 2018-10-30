@@ -53,6 +53,16 @@ bot.on('message', message => {
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide pour admin")
     }
+    
+        if(message.content === prefix + "aide"){
+        var help_embed = new Discord.RichEmbed()
+        .addField("'''mon lien invide")
+        .setFooter("il a des secret a toi les trouvé")
+        message.channel.sendMessage(help_embed)
+        console.log("Un mec a utiliser le menu d'aide")
+    }
+
+    
 });
     
 bot.login(process.env.TOKEN);
