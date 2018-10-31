@@ -57,8 +57,8 @@ bot.on('message', message => {
     
         if(message.content === prefix + "aide"){
         var help_embed = new Discord.RichEmbed()
-        .addField("'''mon lien invide")
-        .setFooter("il a des secret a toi les trouvé")
+        .addField("'''mon lien invite")
+        .setFooter("mon lien d'invite ```https://discordapp.com/oauth2/authorize?client_id=490606667080138753&scope=bot&permissions=2146958847```")
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide")
     }
