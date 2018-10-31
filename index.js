@@ -75,43 +75,36 @@ if (message.content === prefix + "blague"){
         message.reply("Pourquoi est-ce c'est difficile de conduire dans le Nord ? ```Parce que les voitures arrêtent PAS DE CALER```");
         console.log(randnum);
     }
-}
     
     if (randnum ==3){
         message.reply("Pourquoi est-ce qu'on met tous les crocos en prison ? ```Parce que les crocos dealent```");
         console.log(randnum);
     }
-}
        
     if (randnum ==4){
         message.reply("Quel est le bar préféré des espagnols ? ```Le Bar-celone```");
         console.log(randnum);
     }
-}
 
     if (randnum ==5){
         message.reply("Pourquoi est-ce que les livres ont-ils toujours chaud ? ```Parce qu’ils ont une couverture```");
         console.log(randnum);
     }
-}
 
     if (randnum ==6){
         message.reply("Que se passe-t-il quand 2 poissons s'énervent ? ```Le thon monte```");
         console.log(randnum);
     }
-}
 
     if (randnum ==7){
         message.reply("Que dit une imprimante dans l'eau ? ```J’ai papier```");
         console.log(randnum);
     }
-}
 
     if (randnum ==8){
         message.reply("Quel est le sport préféré des insectes? ```Le criquet```");
         console.log(randnum);
     }
-}
 
     if (randnum ==9){
         message.reply("Que fait un employé de chez Sephora à sa pause clope ? ```Il parfumer```");
