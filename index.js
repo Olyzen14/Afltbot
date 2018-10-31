@@ -62,10 +62,10 @@ bot.on('message', message => {
         console.log("Un mec a utiliser le menu d'aide pour admin")
     }
     
-        if(message.content === prefix + "invite"){
+    if(message.content === prefix + "invite"){
         message.author.createDM().then(channel => {
-            channel.send('voici mon lien pour me faire rejoindre ton serveur ')
-        }
+            channel.send('voici mon lien pour me faire rejoindre ton serveur ');
+        });
         console.log("il invite perfect")
     }
     
