@@ -21,6 +21,11 @@ bot.on('message', message => {
     if(message.content === "secret"){
         message.reply("tu a trouvé un secret");
     }
+    
+bot.on('message', message => {
+    if(message.content === "secret){
+        message.reply("tu a trouvé un secret");
+    }
         
     if(message.content === prefix + "aide"){
         var help_embed = new Discord.RichEmbed()
@@ -58,12 +63,13 @@ bot.on('message', message => {
     }
     
         if(message.content === prefix + "invite"){
-        var help_embed = new Discord.RichEmbed()
-        .setTitle("Pour l'invite")
-        .addField("mon lien d'invite ```https://discordapp.com/oauth2/authorize?client_id=490606667080138753&scope=bot&permissions=2146958847```")
-        message.channel.sendMessage(help_embed)
+        message.author.createDM().then(channel => {
+            channel.send('voici mon lien pour me faire rejoindre ton serveur ')
+        }
         console.log("il invite perfect")
     }
+    
+    
     
 if (message.content === prefix + "blague"){
     random()
