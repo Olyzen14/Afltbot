@@ -81,7 +81,7 @@ if (message.content === "Comment tu vas Codis ?"){
 function random(min, max) {
     min = Math.ceil(0);
     max = Math.floor(3);
-    randum = Math.floor(Math.random() * (max - min +1) + min);
+    randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
     
 bot.login(process.env.TOKEN);
