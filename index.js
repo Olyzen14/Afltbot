@@ -64,17 +64,17 @@ bot.on('message', message => {
     }
     
     if(message.content === "test"){
-       random();
-       
-       if (randnum == 1){
-        message.reply("J'ai une blague sur les magasins Mais elle a pas supermarché");
-        console.log(Blague1);
-       }
-       
-       if (randnum == 2){
-        message.reply("Pourquoi est-ce qu'on met tous les crocos en prison ? Parce que les crocos dealent.");
-        console.log(blague2);
-       }
+      random();
+      if (randnum == 1){
+          message.reply("SA MARCHE");
+          console.log(GOOD);
+      }
+        
+      if (randum ==2){
+          message.reply("SA REMARCHE");
+          console.log(VERY);
+      }    
+        
     }
     
 });
