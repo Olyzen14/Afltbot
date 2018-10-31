@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = ("a*");
-const randnum = 0;
+const random = 0;
 
 bot.on("ready", function() {
     console.log("Je suis activé")
