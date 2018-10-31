@@ -18,7 +18,7 @@ bot.on('message', function(message){
 })
 
 bot.on('message', message => {
-    if(message.content === "secret"){
+    if(message.content === "secret") {
         message.reply("tu a trouvé un secret");
     }
     
