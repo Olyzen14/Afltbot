@@ -64,7 +64,7 @@ bot.on('message', message => {
     }
     
     if(message.content === "test"){
-      random();
+       random();
         
       if (randnum == 1){
           message.reply("SA MARCHE");
