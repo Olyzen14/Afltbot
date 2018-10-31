@@ -68,11 +68,11 @@ bot.on('message', message => {
        
        if (randnum == 1){
         message.reply("J'ai une blague sur les magasins Mais elle a pas supermarché");
-        console.log(Blague);
+        console.log(Blague1);
        }
        
        if (randnum == 2){
-        message.reply("Pourquoi est-ce qu'on met tous les crocos en prison ? Parce que les crocos dealent.")  ;
+        message.reply("Pourquoi est-ce qu'on met tous les crocos en prison ? Parce que les crocos dealent.");
         console.log(blague2);
        }
     }
