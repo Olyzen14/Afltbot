@@ -63,16 +63,59 @@ bot.on('message', message => {
         console.log("Un mec a utiliser le menu d'aide")
     }
     
-if (message.content === "Comment tu vas Codis ?"){
+if (message.content === prefix + "blague"){
     random()
+    
     if (randnum ==1){
-        message.reply("(réponse num 1), Merci je vais bien ");
+        message.reply("J'ai une blague sur les magasins. ```Mais elle a pas supermarché```");
         console.log(randnum);
     }
  
     if (randnum ==2){
-        message.reply("(réponse 2): Sa ne va pas fort en ce moment");
+        message.reply("Pourquoi est-ce c'est difficile de conduire dans le Nord ? ```Parce que les voitures arrêtent PAS DE CALER```");
         console.log(randnum);
+    }
+}
+    
+    if (randnum ==3){
+        message.reply("Pourquoi est-ce qu'on met tous les crocos en prison ? ```Parce que les crocos dealent```");
+        console.log(randnum);
+    }
+}
+       
+    if (randnum ==4){
+        message.reply("Quel est le bar préféré des espagnols ? ```Le Bar-celone```");
+        console.log(randnum);
+    }
+}
+
+    if (randnum ==5){
+        message.reply("Pourquoi est-ce que les livres ont-ils toujours chaud ? ```Parce qu’ils ont une couverture```");
+        console.log(randnum);
+    }
+}
+
+    if (randnum ==6){
+        message.reply("Que se passe-t-il quand 2 poissons s'énervent ? ```Le thon monte```");
+        console.log(randnum);
+    }
+}
+
+    if (randnum ==7){
+        message.reply("Que dit une imprimante dans l'eau ? ```J’ai papier```");
+        console.log(randnum);
+    }
+}
+
+    if (randnum ==8){
+        message.reply("Quel est le sport préféré des insectes? ```Le criquet```");
+        console.log(randnum);
+    }
+}
+
+    if (randnum ==9){
+        message.reply("Que fait un employé de chez Sephora à sa pause clope ? ```Il parfumer```");
+        console.log(radnum);
     }
 }
     
@@ -80,7 +123,7 @@ if (message.content === "Comment tu vas Codis ?"){
 
 function random(min, max) {
     min = Math.ceil(0);
-    max = Math.floor(3);
+    max = Math.floor(10);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
     
