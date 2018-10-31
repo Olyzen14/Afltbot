@@ -63,20 +63,18 @@ bot.on('message', message => {
         console.log("Un mec a utiliser le menu d'aide")
     }
     
-    if(message.content === "test"){
-       random();
-        
-      if (randnum == 1){
-          message.reply("SA MARCHE");
-          console.log(GOOD);
-      }
-        
-      if (randum ==2){
-          message.reply("SA REMARCHE");
-          console.log(VERY);
-      }    
-        
+if (message.content === "Comment tu vas Codis ?"){
+    random()
+    if (randnum ==1){
+        message.reply("(réponse num 1), Merci je vais bien ");
+        console.log(randnum);
     }
+ 
+    if (randnum ==2){
+        message.reply("(réponse 2): Sa ne va pas fort en ce moment");
+        console.log(randnum);
+    }
+}
     
 });
 
