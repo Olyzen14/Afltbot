@@ -80,7 +80,7 @@ bot.on('message', message => {
 });
 
 function random(min, max) {
-    min = Math.cell(0);
+    min = Math.ceil(0);
     max = Math.floor(5);
     randum = Math.floor(Math.random() * (max - min +1) + min);
 }
