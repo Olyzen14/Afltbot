@@ -65,6 +65,7 @@ bot.on('message', message => {
     
     if(message.content === "test"){
       random();
+        
       if (randnum == 1){
           message.reply("SA MARCHE");
           console.log(GOOD);
