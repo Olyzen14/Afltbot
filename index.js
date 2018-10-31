@@ -57,6 +57,7 @@ bot.on('message', message => {
     
         if(message.content === prefix + "aide"){
         var help_embed = new Discord.RichEmbed()
+        .setColor("#660033")
         .setTitle("Pour l'invite")
         .setField("mon lien d'invite ```https://discordapp.com/oauth2/authorize?client_id=490606667080138753&scope=bot&permissions=2146958847```")
         message.channel.sendMessage(help_embed)
