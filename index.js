@@ -63,7 +63,7 @@ bot.on('message', message => {
         console.log("Un mec a utiliser le menu d'aide")
     }
     
-    if(message.content === prefix + "blague){
+    if(message.content === prefix + "blague"){
        random();
        
        if (randnum == 1){
