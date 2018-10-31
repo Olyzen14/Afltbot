@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = ("a*");
-const random = 0;
+const randum = 0;
 
 bot.on("ready", function() {
     console.log("Je suis activé")
@@ -63,7 +63,7 @@ bot.on('message', message => {
         console.log("Un mec a utiliser le menu d'aide")
     }
     
-    if(message.content === "blague"){
+    if(message.content === "test"){
        random();
        
        if (randnum == 1){
