@@ -27,7 +27,8 @@ bot.on('message', message => {
         .setColor("#660033")
         .setTitle("menu des commandes")
         .setDescription("toute les commande na marche pas desolé on regle le probléme")
-        .addField("a*aide", "pour les commande disponible")
+        .addField("a*blague Pour rigolé")
+        .addField("a*invite Pour inviter le bot dans votre serv (sera mis a jour)") 
         .setFooter("il a des secret a toi les trouvé")
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide")
@@ -51,6 +52,7 @@ bot.on('message', message => {
         .setTitle("a*menu des commandes pour admin")
         .addField("a*kick", "pour sortire les gens mes il pouront revenir comme des méchant")
         .addField("a*ban", "pour faire disparaitre les gens")
+        .addField("a*clear", "ne marche")
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide pour admin")
     }
