@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const randnum = 0;
 const prefix = ("a*");
 
 bot.on("ready", function() {
@@ -62,6 +63,26 @@ bot.on('message', message => {
         console.log("Un mec a utiliser le menu d'aide")
     }
     
+    if(message.content === prefix + "blague){
+       random();
+       
+       if (randnum == 1){
+        message.reply("J'ai une blague sur les magasins Mais elle a pas supermarché");
+        console.log(Blague);
+       }
+       
+       if (randnum == 2){
+        message.reply("Pourquoi est-ce qu'on met tous les crocos en prison ? Parce que les crocos dealent.")  ;
+        console.log(blague2);
+       }
+    }
+    
 });
+
+function random(min, max) {
+    min = Math.cell(0);
+    max = Math.floor(5);
+    randum = Math.floor(Math.random() * (max - min +1) + min);
+}
     
 bot.login(process.env.TOKEN);
