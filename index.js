@@ -67,8 +67,9 @@ bot.on('message', message => {
         .addField("Pour m'invité le lien ```https://discordapp.com/oauth2/authorize?client_id=490606667080138753&scope=bot&permissions=2146958847```")
         message.channel.sendMessage(help_embed)
         console.log("BOT")
-
- }   
+    }
+   
+    
 if (message.content === prefix + "blague"){
     random()
     
