@@ -55,7 +55,7 @@ bot.on('message', message => {
         console.log("Un mec a utiliser le menu d'aide pour admin")
     }
     
-        if(message.content === prefix + "aide"){
+        if(message.content === prefix + "invite"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#660033")
         .setTitle("Pour l'invite")
