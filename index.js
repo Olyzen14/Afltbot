@@ -22,14 +22,12 @@ bot.on('message', message => {
         message.reply("tu a trouvé un secret");
     }
         
-    if(message.content === prefix + "aide"){
+    if(message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#660033")
         .setTitle("menu des commandes")
         .setDescription("toute les commande na marche pas desolé on regle le probléme")
-        .addField("Moderateur")
-        .setFooter("``Ban`` ``Kick`` ``Clear ne marche plus``")
-        .addField("a*invite Pour inviter le bot dans votre serv (sera mis a jour)") 
+        .addField("Moderateur "``Ban`` ``kick`` ``clear``")
         .setFooter("il a des secret a toi les trouvé")
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide")
