@@ -27,7 +27,7 @@ bot.on('message', message => {
         .setColor("#660033")
         .setTitle("menu des commandes")
         .setDescription("toute les commande na marche pas desolé on regle le probléme")
-        .addField("Moderateur"' "``ban`` ``kick`` ``clear``")
+        .addField("Moderateur", "``ban`` ``kick`` ``clear``")
         .setFooter("il a des secret a toi les trouvé")
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide")
