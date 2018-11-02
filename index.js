@@ -5,7 +5,7 @@ const randum = 0;
 
 bot.on("ready", function() {
     console.log("Je suis activé")
-    bot.user.setActivity('faite a*aide by boruto')
+    bot.user.setActivity('faite a*help by boruto')
     .catch(console.error)
 });
 
