@@ -24,14 +24,13 @@ bot.on('message', message => {
         
     if(message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
-        .setColor("#660033")
+        .setColor("#330066")
         .setTitle("menu des commandes")
         .setDescription("toute les commande na marche pas desolé on regle le probléme")
         .addField("Moderateur", "``ban`` ``kick`` ``clear``")
         .addField("Fun", "``blague``")
         .addField("Autres","``invite``")
         .setFooter("Bien d'autre chose arrive restez actif")
-        .setFooter("il a des secret a toi les trouvé")
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide")
     }
