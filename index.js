@@ -28,7 +28,7 @@ bot.on('message', message => {
         .setTitle("menu des commandes")
         .setDescription("toute les commande na marche pas desolé on regle le probléme")
         .addField("Moderateur")
-        .setDescription("```Ban``` ```Kick``` ```Clear ne marche plus```")
+        .setFooter("``Ban`` ``Kick`` ``Clear ne marche plus``")
         .addField("a*invite Pour inviter le bot dans votre serv (sera mis a jour)") 
         .setFooter("il a des secret a toi les trouvé")
         message.channel.sendMessage(help_embed)
